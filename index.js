@@ -156,9 +156,6 @@ function moveDodgerLeft() {
    */
    
    var left = positionToInteger(DODGER.style.left);
-   // I don't need the code below because positionToInteger does that for me.
-   //var leftNumbers = DODGER.style.left.replace("px", "");
-   //var left = parseInt(leftNumbers, 10);
    
    function stepLeft() {
      DODGER.style.left = `${left - 4}px`;
