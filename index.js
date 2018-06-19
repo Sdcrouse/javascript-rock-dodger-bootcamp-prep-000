@@ -12,14 +12,7 @@ const START = document.getElementById('start')
 
 var gameInterval = null
 
-/**
- * Be aware of what's above this line,
- * but all of your work should happen below.
- */
-
 function checkCollision(rock) {
-  // implement me!
-  // use the comments below to guide you!
   const top = positionToInteger(rock.style.top);
 
   // rocks are 20px high
@@ -74,8 +67,6 @@ function createRock(x) {
    * seems like a good pace.)
    */
   function moveRock() {
-    // implement me!
-    // (use the comments below to guide you!)
     /**
      * If a rock collides with the DODGER,
      * we should call endGame()
@@ -139,13 +130,11 @@ function endGame() {
 }
 
 function moveDodger(e) {
-  // implement me!
   /**
    * This function should call `moveDodgerLeft()`
    * if the left arrow is pressed and `moveDodgerRight()`
    * if the right arrow is pressed. (Check the constants
    * we've declared for you above.)
-   * And be sure to use the functions declared below!
    */
    
    if(e.which === LEFT_ARROW){
@@ -161,7 +150,6 @@ function moveDodger(e) {
 }
 
 function moveDodgerLeft() {
-  // implement me!
   /**
    * This function should move DODGER to the left
    * (maybe 4 pixels?). Use window.requestAnimationFrame()!
@@ -193,7 +181,6 @@ function moveDodgerLeft() {
 }
 
 function moveDodgerRight() {
-  // implement me!
   /**
    * This function should move DODGER to the right
    * (maybe 4 pixels?). Use window.requestAnimationFrame()!
